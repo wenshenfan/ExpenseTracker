@@ -81,6 +81,10 @@ namespace ExpenseTracker.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            if (_context.Categories == null)
+            {
+                return Problem("Entity set 'AppDbContext.Categories' is null.");
+            }
             var category = await _context.Categories.FindAsync(id);
             if (category != null)
             {
@@ -91,9 +95,5 @@ namespace ExpenseTracker.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool CategoryExists(int id)
-        {
-            return _context.Categories.Any(e => e.CategoryId == id);
-        }
     }
 }
