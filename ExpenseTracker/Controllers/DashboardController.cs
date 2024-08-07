@@ -35,6 +35,7 @@ namespace ExpenseTracker.Controllers
                 .Sum(j => j.Amount);
             ViewBag.TotalExpense = TotalExpense.ToString("C0");
 
+
             //Balance
             int Balance = TotalIncome - TotalExpense;
             ViewBag.Balance = Balance.ToString("C0");
@@ -50,7 +51,7 @@ namespace ExpenseTracker.Controllers
                 {
                     categoryTitleWithIcon=k.First().Category.Icon+" "+k.First().Category.Title,     //將類別的Icon和Title組合成一個字串
                     amount = k.Sum(j=>j.Amount),                                                    //計算該類別的總支出金額
-                    formattedAmount=k.Sum(j=>j.Amount).ToString("C0"),                              //將總支出金額格式化為貨幣格式的字串(例如，$1,000)，這樣顯示起來更清晰
+                    formattedAmount=k.Sum(j=>j.Amount).ToString("C0"),                              //將總支出金額格式化為貨幣格式的字串(例如，NT$1,000)，這樣顯示起來更清晰
                 })
                 .ToList();
 
