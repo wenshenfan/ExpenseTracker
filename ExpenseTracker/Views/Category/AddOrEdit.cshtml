@@ -25,7 +25,7 @@
                 </div>
                 <div class="mb-3">
                     <ejs-textbox id="icon" name="Icon" placeholder="Icon" ejs-for="Icon" floatLabelType="Always"></ejs-textbox>
-                    <span asp-validation-for="Icon" class="text-danger"></span>
+                    <span asp-validation-for="Icon" class="text-danger fs-6"></span>
                 </div>
                 <ejs-button id="submit" cssClass="e-success" type="submit" content="Submit"></ejs-button>
             </form>
@@ -39,6 +39,6 @@
 </div>
 
 
-@section Scripts {
+@* @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+} *@
