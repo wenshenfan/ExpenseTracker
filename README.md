@@ -3,7 +3,7 @@
 # 功能展示
 
 # 新增支出/收入種類
-![示例截圖01](https://github.com/wenshenfan/ExpenseTracker/tree/master/screenshoot/create_Category.jpg)
+![示例截圖01](screenshoot/create_Category.jpg)
 
 # 支出收入種類頁面
 ![示例截圖02](https://github.com/wenshenfan/ExpenseTracker/tree/master/screenshoot/Categories.jpg)
