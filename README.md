@@ -1,6 +1,7 @@
 # ExpenseTracker 練習
 
 # 功能展示
+https://youtu.be/Pk2KcwLn1es
 
 # 新增支出/收入種類
 ![示例截圖01](screenshoot/create_Category.jpg)
@@ -16,5 +17,5 @@
 
 # 近7日交易紀錄儀錶板
 ![示例截圖05](screenshoot/Dashboard.jpg)
-![示例截圖06](Dashboard2.jpg)
+![示例截圖06](screenshoot/Dashboard2.jpg)
 
