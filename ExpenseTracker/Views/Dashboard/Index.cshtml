@@ -46,19 +46,18 @@
 <div class="row mb-4">
     <div class="col-md-4">
         <div class="widget chart">
-            <div class="title p-4">
+            <div class="p-4">
                 <h5 class="fw-bold">Expense By Category</h5>
             </div>
-            <ejs-accumulationchart id="doughnutchart"enableSmartLabels background="#1a222b">
+            <ejs-accumulationchart id="doughnutchart" background="#1a222b" enableSmartLabels>
                 <e-accumulation-series-collection>
                     <e-accumulation-series dataSource="@ViewBag.DoughnutChartData"
-                    xName="categoryTitleWithIcon"yName="amount" innerRadius="55%" legendshape=Circle>
-                        <e-accumulationseries-datalabel name="formattedAmount" visible="true" >
-                            <e-font fontWeight="600" Size="8" color="white" ></e-font>
-                        </e-accumulationseries-datalabel>
+                                           xName="categoryTitleWithIcon" yName="amount" innerRadius="55%" legendshape=Circle
+                                           palettes=@(new string[]{"#0e8d76","#a4b219","#cb9b00","#8a442c","#0454b5","#7d0a0a","#822690","#4c2090","#313e93","#0096ac"})>
+                        <e-accumulationseries-datalabel name="formattedAmount" visible="true" ></e-accumulationseries-datalabel>
                 </e-accumulation-series>
                 </e-accumulation-series-collection>
-                <e-accumulationchart-legendsettings position="Top"toggleVisibility=false>
+                <e-accumulationchart-legendsettings position="Top">
                     <e-legendsettings-textstyle color="#fff" size="1rem"></e-legendsettings-textstyle>
                 </e-accumulationchart-legendsettings>
                 <e-accumulationchart-tooltipsettings enable></e-accumulationchart-tooltipsettings>
